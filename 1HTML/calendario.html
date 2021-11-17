@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Creada por mi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendario</title>
+  </head>
+  <body>
+    <h1>Calendario repartido en varios inputs</h1>
+    <form action="">
+      <label for="hora">
+        <span>Hora</span>
+        <input type="time" id="hora" name="hora" />
+      </label>
+      <label for="dia">
+        <span>Día</span>
+        <input type="date" name="dia" id="dia" />
+      </label>
+      <label for="semana">
+        <span>Semana</span>
+        <input type="week" id="semana" name="semana" />
+      </label>
+      <label for="mes">
+        <span>Mes</span>
+        <input type="month" name="mes" id="mes" />
+      </label>
+    </form>
+
+    <h1>Calendario en un input</h1>
+    <form action="" method="get">
+      <label>
+        <span>Calendario</span>
+        <input type="datetime-local" name="calendario" id="calendario" />
+      </label>
+    </form>
+  </body>
+</html>
