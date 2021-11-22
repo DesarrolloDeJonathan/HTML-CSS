@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Flex</title>
+    <link rel="stylesheet" href="./display__flex.css" />
+    <!-- Estilos van en un archivo externo  -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        font-size: 1.6rem;
+      }
+      .container {
+        border: 0.3rem solid black;
+        /* heredara esta propiedad a los elementos hijos */
+        display: flex;
+        align-items: center;
+        height: 50vh; /* mantendra la altura siempre al 50% de la pantalla */
+        flex-wrap: wrap; /* Permite apilar los elementos cuando se reduce el espacio */
+      }
+      .box {
+        /* width: 10rem; */
+        height: 10rem;
+        /* tamaño inicial de un elemento flexible */
+        flex-basis: 10rem;
+        /* todos los elementos dentro de box se agustaran al espacio disponible */
+        flex-grow: 1;
+      }
+      .box1 {
+        background-color: blue;
+        /* Con esta instrucción elijo el orden en que aparece cada caja */
+        /* order: 1; */
+      }
+      .box2 {
+        background-color: blueviolet;
+        /* Hara uso del espacio disponible adecuandose a este */
+        /* flex-grow: 1; */
+      }
+      .box3 {
+        background-color: burlywood;
+      }
+      .box4 {
+        background-color: cadetblue;
+      }
+      .box5 {
+        background-color: coral;
+      }
+      .box6 {
+        background-color: salmon;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="box1 box">
+        <p>box1</p>
+      </div>
+      <div class="box2 box">
+        <p>box2</p>
+      </div>
+      <div class="box3 box">
+        <p>box3</p>
+      </div>
+      <div class="box4 box">
+        <p>box4</p>
+      </div>
+      <div class="box5 box">
+        <p>box5</p>
+      </div>
+      <div class="box6 box">
+        <p>box6</p>
+      </div>
+    </main>
+  </body>
+</html>

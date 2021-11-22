@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./variables.css" />
+    <!-- Estilos van en un archivo externo  -->
+    <style>
+      /* Elemento pseudo clase que es el punto de partida donde definimos varables */
+      :root {
+        --primary-color: #003476;
+        --secundary-color: #b4d2f7;
+        --header-size: 4rem;
+        --font: 1.8rem;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      header {
+        width: 100vw;
+        height: 15vh;
+        background-color: var(--primary-color);
+      }
+      main {
+        width: 100vw;
+        height: 70vh;
+        font-size: var(--font);
+      }
+
+      h1 {
+        font-size: var(--header-size);
+        color: var(--primary-color);
+      }
+
+      footer {
+        width: 100vw;
+        height: 15vh;
+        background-color: var(--secundary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>Soy un titulo</h1>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur
+          iste hic odio soluta, atque voluptates natus expedita quam recusandae
+          ex? Beatae non quod sed accusamus dolore blanditiis expedita, ea
+          labore?
+        </p>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vh / Vw & Min / Max</title>
+    <link rel="stylesheet" href="./medidas__min-max.css" />
+    <!-- Estilos van en un archivo externo  -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        width: 100vw;
+        height: 100vh;
+        background-color: purple;
+      }
+
+      section {
+        width: 100%;
+        min-width: 320px;
+        max-width: 500px;
+        /* agregamos esto para que el contenedor se pueda adaptar
+         si el contenido supera el tamaño del contenedor */
+        min-height: 500px;
+        background-color: red;
+        /* centra el elemento de izquierda a derecha */
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+          repellendus, odit sit cum commodi atque facere quos necessitatibus
+          exercitationem, deleniti eaque quas quia totam debitis consectetur.
+          Molestiae quae aperiam culpa? Totam natus commodi culpa molestiae
+          corporis ad possimus, ut omnis consequuntur? Architecto ipsam mollitia
+          explicabo fugit. Aspernatur possimus sint officiis voluptatem ex eius
+          illum fugiat dicta. Est dolores nesciunt consequatur! Nam labore eum
+          delectus cupiditate nobis velit, unde est, facilis quibusdam
+          dignissimos tempora ab veritatis asperiores pariatur deserunt numquam
+          quia aliquam earum molestiae ipsum quae qui quas sint laboriosam.
+          Molestiae. Rerum, est dolorem. Inventore non quibusdam, optio in totam
+          voluptates veniam vero distinctio culpa est iure ducimus, id voluptas.
+          Perferendis neque fugit dolore ipsam, suscipit iure ullam similique
+          totam quas. Optio laboriosam, minima explicabo nulla perferendis
+          dignissimos harum sint incidunt nemo! Animi, culpa nesciunt illo
+          soluta facere architecto aut maiores doloribus molestiae libero porro
+          corporis minima odio sint natus a. Aspernatur esse, eaque animi fuga
+          placeat aperiam veritatis provident beatae odit repellat in debitis
+          atque, deleniti labore unde. Placeat voluptas consectetur commodi
+          nulla quibusdam ut eligendi, dignissimos alias delectus voluptatibus.
+          Autem et aliquid ratione vero earum sint? Animi, vero saepe dolorum
+          voluptates nobis ea nisi, quidem aut facere nemo quos tempore cumque
+          iste dolorem iure repellat soluta vel corporis. Placeat. Quidem ipsam,
+          qui ratione libero aperiam fuga provident cupiditate natus, quam nemo
+          quis, quibusdam illo officiis laborum? Ut esse quod officiis tenetur
+          delectus, temporibus, minus praesentium, et expedita rerum aperiam?
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

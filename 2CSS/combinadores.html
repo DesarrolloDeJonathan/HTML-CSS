@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinadores > ~ +</title>
+    <link rel="stylesheet" href="./combinadores.css" />
+    <!-- Estilos van en un archivo externo  -->
+    <style>
+      /* Combinadores: Adjacent Siblings */
+      /* h2 + p {
+        color: blue;
+      } */
+
+      /* Combinadores: Adjacent Siblings */
+      /* h2 ~ p {
+        color: blueviolet;
+      } */
+
+      /* Combinadores: Hijo */
+      div > p {
+        color: red;
+      }
+
+      /* Combinadores: Descendiente */
+      div p {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Adjacent Siblings -->
+    <!-- <div>
+      <h2>Un H2</h2>
+      <p>Un parrafo</p>
+      <h2>Un H2</h2>
+      <h3>Un H3</h3>
+      <p>Un parrafo</p>
+      <h2>Un H2</h2>
+      <p>Un parrafo</p>
+    </div> -->
+
+    <!-- Combinadores: General Sibling -->
+    <!-- <div>
+        <h2>Un H2</h2>
+        <p>Un parrafo</p>
+        <h2>Un H2</h2>
+        <h3>Un H3</h3>
+        <p>Un parrafo</p>
+        <p>Un parrafo</p>
+        <div>
+          <p>parrafo en otro </p>
+        </div>
+      </div> -->
+
+    <!-- Combinadores: Hijo y Descendiente -->
+    <div>
+      <article>
+        <p>soy un texto dentro de un article</p>
+      </article>
+      <article>
+        <p>soy un texto dentro de un article</p>
+      </article>
+      <section>
+        <div>
+          <p>soy un texto dentro de un div</p>
+        </div>
+      </section>
+      <p>soy un texto dentro de un div</p>
+    </div>
+  </body>
+</html>

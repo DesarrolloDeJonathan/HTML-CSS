@@ -1,0 +1,17 @@
+/* Esta clase sera sobre escrita por 
+las demás una vez se lea el documento */
+p {
+  color: yellow;
+  font-size: 40px;
+}
+
+/* class */
+.parrafo {
+  color: red;
+}
+
+/* ID
+#texto {
+  color: yellow;
+  font-size: 24px;
+} */

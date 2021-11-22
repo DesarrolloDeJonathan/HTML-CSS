@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especifidad</title>
+    <link rel="stylesheet" href="./especifidad.css" />
+    <!-- Estilos van en un archivo externo  -->
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        color: purple;
+        font-family: serif;
+        margin-bottom: 10px;
+      }
+      /* Lo eliminamos por temas de especifidad y además
+        evitar usar ids dentro de nuestros estilos
+        #page-title {
+          font-family: Arial, Helvetica, sans-serif;
+        } */
+      .title {
+        font-size: 18px;
+        font-family: monospace;
+      }
+      .nav {
+        margin-top: 10px;
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .nav li {
+        display: inline-block;
+      }
+
+      .nav a {
+        color: white;
+        background-color: #13a4a4;
+        padding: 5px;
+        border-radius: 2px;
+        text-decoration: none;
+      }
+
+      /* mejor forma de aplicar especifidad es añadir otra
+        clase a dicho elemento */
+      .nav .blog {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <h1 id="page-title" class="title">Empresa</h1>
+      <nav>
+        <ul id="main-nav" class="nav">
+          <li><a href="">Home</a></li>
+          <li><a href="">Cursos</a></li>
+          <li><a href="">Instructores</a></li>
+          <li>
+            <a href="" class="blog">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

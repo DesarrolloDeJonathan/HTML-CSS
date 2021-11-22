@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./pseudo__styles.css" />
+    <!-- Estilos van en un archivo externo  -->
+    <style>
+      /* removiendo pseudoclase de la viñeta que viene por defecto */
+      /* li {
+          list-style: none;
+        } */
+      .main__nav {
+        margin-top: 10px;
+        /* removiendo pseudo clase que viene por defecto */
+        list-style: none;
+        padding-left: 0;
+        background-color: #13a4a4;
+      }
+      .main__nav-item {
+        display: inline-block;
+      }
+      /* Estamos siendo especificos y a todas las etiquetas que estan dentro
+        de <a> con esta clase .main__nav-item se les aplicara:
+      */
+      .main__nav-item a {
+        color: white;
+        padding: 5px;
+        border-radius: 2px;
+        text-decoration: none;
+      }
+
+      /* Pseudo clases 
+        se reconocen por llevar dos puntos */
+      .main__nav-item a:hover {
+        color: blue;
+      }
+      .main__nav-item a:active {
+        color: red;
+      }
+
+      /* Pseudo elementos :: se reconocen por llevar cuatro puntos ::
+        en este caso añade un linea antes de cada uno de esos elementos
+      */
+      .main__nav-item a::after {
+        content: " | ";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Con la nomenclatura BEM evitaremos confundir los estilos de estos
+          elementos <li> con los li del section
+        -->
+        <ul class="main__nav">
+          <li class="main__nav-item"><a href="">Home</a></li>
+          <li class="main__nav-item"><a href="">Cursos</a></li>
+          <li class="main__nav-item"><a href="">Intructores</a></li>
+          <li class="main__nav-item"><a href="">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- elemento <li> protegido por pseudo clases -->
+      <section>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

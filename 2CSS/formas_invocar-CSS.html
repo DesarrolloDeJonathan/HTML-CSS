@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invocando CSS</title>
+    <!-- Formas de llamar CSS Primera forma-->
+    <link rel="stylesheet" href="./formas_invocar-CSS.css" />
+    <!-- segunda forma -->
+    <style>
+      /* ID */
+      #texto {
+        color: green;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main style="margin: 6em; padding: 2px">
+      <p class="parrafo">Tengo una clase que me aplica estilos</p>
+      <p id="texto">
+        Mis estilos estan dados por un id y los estilos estan dentro de la
+        etiqueta head
+      </p>
+      <!-- Tercera forma (embebidos) -->
+      <p style="color: rgb(1, 49, 207)">
+        Soy un texto con estilos en línea osea dentro de mi porpia etiqueta
+      </p>
+    </main>
+  </body>
+</html>
