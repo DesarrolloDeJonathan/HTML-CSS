@@ -1,0 +1,6 @@
+/* mientras el view port no sea más pequeño que 600px se aplicara estilo */
+.c2,
+.c3,
+.c4 {
+  width: 50%;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagenes Responsive</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Esta etiqueta se convierte en el contenedor de nuestra img -->
+      <picture>
+        <!-- los source se organizan por tamaño en orden descendente -->
+        <source media="(min-width:1300px)" srcset="./imgs/large.jpg" />
+        <source media="(min-width:1000px)" srcset="./imgs/medium.jpg" />
+        <!-- img es la que renderiza la imagen no source -->
+        <img src="./imgs/small.jpg" alt="Esuna imagen de ejemplo" />
+      </picture>
+    </main>
+  </body>
+</html>
