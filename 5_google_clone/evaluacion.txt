@@ -1,0 +1,39 @@
+
+¿Cómo se le llama al patrón de elementos HTML, clases y IDs usado en CSS para agregar estilos?
+
+Selector
+
+¿Cómo se le llama al conjunto de elementos que agregan estilos a etiquetas de HTML?
+
+Reglas
+REPASAR CLASE
+
+¿Cuál es la declaración correcta para colocar una imagen de fondo en CSS?
+background-image: url(" ");
+
+
+¿Para que nos ayuda la propiedad de "display" en CSS?
+Nos ayuda a poder darle dimensiones a los contenedores.
+REPASAR CLASE
+
+¿Qué elemento utilizarías en tu archivo de CSS para poder seleccionar y resetear todos los estilos que genera el navegador por defecto?
+*
+
+¿De qué forma podría posicionar con CSS el contenido que esté dentro de algún elemento de HTML hacia algún extremo?
+display: flex; justify-content: right;
+
+REPASAR CLASE
+
+¿Para qué nos ayudan las clases y IDs en CSS?
+Es una buena práctica para poder localizar etiquetas que son importantes para nosotros tanto por grupos como únicas.
+REPASAR CLASE
+
+¿Cuál es la diferencia entre una clase y un ID de CSS?
+Las clases nos ayudan a crear estilos para grupos de elementos de HTML, son genéricas. En cambio, los IDs nos ayudan para aplicar estilos de manera única a algún elemento especifico.
+
+¿Cuál es la propiedad para agregar una sombra de fondo en CSS?
+box-shadow
+
+¿Cuál de las siguientes opciones sería una pseudoclase en CSS?
+
+:hover
