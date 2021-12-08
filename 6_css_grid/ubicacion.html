@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propiedades de Ubicación</title>
+    <style>
+      :root {
+        --border-color: hsl(167.54, 74.69%, 48.04%);
+      }
+      .contenedor {
+        border: 5px solid hsl(180, 7.69%, 84.71%);
+        background-color: rgb(37, 182, 93);
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 75px 75px 75px;
+        place-content: center;
+
+        /* Segunda forma */
+        grid-template-areas:
+          "header header header"
+          "side main main"
+          "side main main";
+      }
+
+      .item {
+        font-size: 4rem;
+      }
+
+      .item-1 {
+        border: 5px solid var(--border-color);
+        background-color: hsla(88, 50%, 50%, 0.9);
+        /* Ubicando elementos  */
+        /* grid-column-start: 1; */
+        /* grid-column-end: 4; */
+
+        /* Segunda forma */
+        grid-area: header;
+      }
+      .item-2 {
+        border: 5px solid var(--border-color);
+        background-color: hsla(88, 50%, 10%, 0.9);
+        /* Ubicando elementos  */
+        /* grid-row: 2 / 4; */
+
+        /* Segunda forma */
+        grid-area: side;
+      }
+      .item-3 {
+        border: 5px solid var(--border-color);
+        background-color: hsla(88, 50%, 20%, 0.7);
+        /* Ubicando elementos  */
+        /* grid-area: 2 / 2 / 4 / 4; */
+
+        /* Segunda forma */
+        grid-area: main;
+      }
+      /* Form challenge 
+      .main {
+        display: grid;
+        width: 100%;
+        height: 450px;
+        place-content: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+          "uno dos dos"
+          "tres tres cuatro"
+          "cinco seis siete";
+        border: 2px solid black;
+        width: 450px;
+        height: 250px;
+        vertical-align: middle;
+      }
+      .item {
+        background: #9eff84;
+        border: 2px solid black;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 30px;
+      }
+      .item-1 {
+        grid-area: uno;
+      }
+      .item-2 {
+        grid-area: dos;
+      }
+      .item-3 {
+        grid-area: tres;
+      }
+      .item-4 {
+        grid-area: cuatro;
+      }
+      .item-5 {
+        grid-area: cinco;
+      }
+      .item-6 {
+        grid-area: seis;
+      }
+      .item-7 {
+        grid-area: siete;
+      }
+      */
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+    </div>
+
+    <!-- Form Challenge 
+    <div class="main">
+      <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+      </div>
+    </div>
+    -->
+  </body>
+</html>

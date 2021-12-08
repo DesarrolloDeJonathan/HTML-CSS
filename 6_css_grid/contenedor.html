@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propiedades del Contenedor</title>
+    <style>
+      .contenedor {
+        border: 5px solid hsl(160, 94%, 12%);
+        background-color: hsl(147, 51%, 24%);
+        margin: 50px;
+        padding: 15px;
+        /* Aquí empezaremos a crear grillas o cuadriculas */
+        display: grid;
+        grid-template-rows: 100px 200px;
+        grid-auto-columns: 100px;
+        grid-auto-flow: column;
+        /* grid-gap: 20px; */
+        grid-row-gap: 15px;
+        column-gap: 15px;
+      }
+      .item {
+        border: 5px solid hsl(120, 50%, 50%);
+        font-size: 2rem;
+        text-align: center;
+        line-height: normal;
+      }
+
+      .reto-contenedor {
+        border: 5px solid hsl(160, 94%, 12%);
+        background-color: hsl(147, 51%, 24%);
+        margin: 50px;
+        padding: 15px;
+        display: grid;
+        grid-template-rows: 150px 150px 150px;
+        grid-auto-columns: 150px;
+        grid-auto-flow: column;
+        gap: 20px;
+      }
+      .reto-item {
+        border: 5px solid #f9fbfb;
+        font-size: 4rem;
+        background-color: #1b9736;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="item item-1">1</div>
+      <div class="item item-2">2</div>
+      <div class="item item-3">3</div>
+      <div class="item item-4">4</div>
+      <div class="item item-3">5</div>
+      <div class="item item-4">6</div>
+      <div class="item item-3">7</div>
+      <div class="item item-4">8</div>
+    </div>
+
+    <div class="reto-contenedor">
+      <div class="reto-item">1</div>
+      <div class="reto-item">2</div>
+      <div class="reto-item">3</div>
+      <div class="reto-item">4</div>
+      <div class="reto-item">5</div>
+      <div class="reto-item">6</div>
+      <div class="reto-item">7</div>
+      <div class="reto-item">8</div>
+      <div class="reto-item">9</div>
+    </div>
+  </body>
+</html>
